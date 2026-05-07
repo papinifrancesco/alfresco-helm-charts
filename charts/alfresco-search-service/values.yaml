@@ -79,11 +79,11 @@ environment:
   SOLR_CREATE_ALFRESCO_DEFAULTS: alfresco,archive
 resources:
   requests:
-    cpu: "0.50"
-    memory: "1200Mi"
+    cpu: "250m"
+    memory: "512Mi"
   limits:
-    cpu: "4"
-    memory: "2000Mi"
+    cpu: "1"
+    memory: "1200Mi"
 persistence:
   # -- When disabled, data is lost when pod is terminated/rescheduled
   enabled: true

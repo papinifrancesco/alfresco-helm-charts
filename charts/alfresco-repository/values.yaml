@@ -264,11 +264,11 @@ ingress:
   #      - chart-example.local
 resources:
   requests:
-    cpu: "2"
-    memory: "2Gi"
+    cpu: "1"
+    memory: "1Gi"
   limits:
-    cpu: "4"
-    memory: "8Gi"
+    cpu: "2"
+    memory: "4Gi"
 startupProbe:
   periodSeconds: 20
   failureThreshold: 9

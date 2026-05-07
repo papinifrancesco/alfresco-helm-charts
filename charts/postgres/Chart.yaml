@@ -15,4 +15,4 @@ appVersion: "17.9"
 dependencies:
   - name: alfresco-common
     version: 5.0.0
-    repository: https://alfresco.github.io/alfresco-helm-charts/
+    repository: file://../alfresco-common

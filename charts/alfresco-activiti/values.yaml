@@ -45,11 +45,11 @@ ingress:
   #      - chart-example.local
 resources:
   limits:
-    cpu: 4000m
-    memory: 8Gi
+    cpu: 1000m
+    memory: 2Gi
   requests:
     cpu: 500m
-    memory: 1Gi
+    memory: 512Mi
 persistence:
   # -- Persist Alfresco Process data
   enabled: false

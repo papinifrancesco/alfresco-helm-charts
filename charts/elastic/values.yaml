@@ -28,10 +28,10 @@ elasticsearch:
       passwordKey: "password"
   resources:
     requests:
-      cpu: 500m
-      memory: 2Gi
+      cpu: 250m
+      memory: 1Gi
     limits:
-      memory: 2Gi
+      memory: 1Gi
   podSecurityContext:
     fsGroup: 1000
   persistence:
@@ -82,10 +82,10 @@ kibana:
     pullPolicy: IfNotPresent
   resources:
     requests:
-      cpu: 500m
-      memory: 1Gi
+      cpu: 250m
+      memory: 512Mi
     limits:
-      memory: 1Gi
+      memory: 512Mi
   ingress:
     enabled: false
     className: ""

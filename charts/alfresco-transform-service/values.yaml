@@ -83,8 +83,8 @@ transformrouter:
       cpu: "100m"
       memory: "250Mi"
     limits:
-      cpu: "1"
-      memory: "1Gi"
+      cpu: "500m"
+      memory: "512Mi"
   volumes: []
   volumeMounts: []
 pdfrenderer:
@@ -152,8 +152,8 @@ pdfrenderer:
       cpu: "100m"
       memory: "250Mi"
     limits:
-      cpu: "2"
-      memory: "2Gi"
+      cpu: "500m"
+      memory: "1Gi"
   environment:
     JAVA_OPTS: >-
       -XX:MinRAMPercentage=50
@@ -276,8 +276,8 @@ imagemagick:
       cpu: "250m"
       memory: "250Mi"
     limits:
-      cpu: "4"
-      memory: "4Gi"
+      cpu: "1"
+      memory: "1Gi"
   environment:
     JAVA_OPTS: >-
       -XX:MinRAMPercentage=50
@@ -398,8 +398,8 @@ libreoffice:
       cpu: "250m"
       memory: "500Mi"
     limits:
-      cpu: "4"
-      memory: "4Gi"
+      cpu: "1"
+      memory: "1Gi"
   podSecurityContext:
     runAsNonRoot: true
     runAsUser: 33003
@@ -526,8 +526,8 @@ tika:
       cpu: "250m"
       memory: "600Mi"
     limits:
-      cpu: "4"
-      memory: "4Gi"
+      cpu: "1"
+      memory: "1Gi"
   environment:
     JAVA_OPTS: >-
       -XX:MinRAMPercentage=50
@@ -651,8 +651,8 @@ transformmisc:
       cpu: "100m"
       memory: "250Mi"
     limits:
-      cpu: "2"
-      memory: "2Gi"
+      cpu: "500m"
+      memory: "1Gi"
   environment:
     JAVA_OPTS: >-
       -XX:MinRAMPercentage=50
@@ -786,8 +786,8 @@ filestore:
       cpu: "100m"
       memory: "250Mi"
     limits:
-      cpu: "2"
-      memory: "1Gi"
+      cpu: "500m"
+      memory: "512Mi"
   environment:
     scheduler.content.age.millis: "86400000"
     scheduler.cleanup.interval: "86400000"
